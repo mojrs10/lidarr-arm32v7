@@ -9,14 +9,14 @@ git config --global user.email "actions@github.com"
 echo "🔧 Postavljam prava na izvršavanje za potrebne fajlove..."
 
 chmod 755 root/donate.txt
-chmod 755 root/etc/s6-overlay/s6-rc.d/init-prowlarr-config/run
-chmod 755 root/etc/s6-overlay/s6-rc.d/svc-prowlarr/run
-chmod 755 root/etc/s6-overlay/s6-rc.d/svc-prowlarr/data/check
+chmod 755 root/etc/s6-overlay/s6-rc.d/init-lidarr-config/run
+chmod 755 root/etc/s6-overlay/s6-rc.d/svc-lidarr/run
+chmod 755 root/etc/s6-overlay/s6-rc.d/svc-lidarr/data/check
 
 git add root/donate.txt
-git add root/etc/s6-overlay/s6-rc.d/init-prowlarr-config/run
-git add root/etc/s6-overlay/s6-rc.d/svc-prowlarr/run
-git add root/etc/s6-overlay/s6-rc.d/svc-prowlarr/data/check
+git add root/etc/s6-overlay/s6-rc.d/init-lidarr-config/run
+git add root/etc/s6-overlay/s6-rc.d/svc-lidarr/run
+git add root/etc/s6-overlay/s6-rc.d/svc-lidarr/data/check
 
 # Provjeri je li bilo promjena
 if ! git diff-index --quiet HEAD --; then
